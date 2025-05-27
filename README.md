@@ -34,3 +34,29 @@ The system allows administrators to add, edit, delete, and view employee details
 
 ```bash
 git clone https://github.com/kishor2254/edms.git
+
+### Step 2: Set Up XAMPP
+Install XAMPP if not already installed
+
+Start Apache and MySQL from the XAMPP Control Panel
+
+### Step 3: Import the Database
+Open phpMyAdmin
+
+Create a new database: edms_db
+
+Import the SQL file: edms_db.sql (found in the root of the project)
+
+### Step 4: Configure Database Connection
+Open includes/config.php and update if needed:
+  $host = "localhost";
+$username = "root";
+$password = "";
+$database = "edms_db";
+
+### Step 5: Run the Application
+Move the project folder to htdocs in your XAMPP directory
+
+Visit http://localhost/edms in your browser
+
+
